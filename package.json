@@ -1,0 +1,29 @@
+{
+  "name": "@ffmpeg-installer/ffmpeg",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "pretest": "jshint *.js",
+    "test": "tape test/*.js",
+    "posttest": "bash test/test-file-types.sh"
+  },
+  "keywords": [
+    "ffmpeg",
+    "binary"
+  ],
+  "author": "Kristoffer Lundén <kristoffer.lunden@gmail.com>",
+  "license": "LGPL 2.1",
+  "description": "Platform independent binary installer for FFmpeg",
+  "optionalDependencies": {
+    "@ffmpeg-installer/darwin-x64": "3.1.3",
+    "@ffmpeg-installer/linux-ia32": "3.1.3",
+    "@ffmpeg-installer/linux-x64": "3.1.3",
+    "@ffmpeg-installer/win32-ia32": "3.0.1",
+    "@ffmpeg-installer/win32-x64": "3.0.1"
+  },
+  "devDependencies": {
+    "jshint": "^2.9.3",
+    "semver": "^5.3.0",
+    "tape": "^4.6.0"
+  }
+}

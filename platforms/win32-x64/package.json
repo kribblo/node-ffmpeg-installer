@@ -1,0 +1,23 @@
+{
+  "name": "@ffmpeg-installer/win32-x64",
+  "version": "3.0.1",
+  "description": "Windows FFmpeg binary used by ffmpeg-installer",
+  "homepage": "https://ffmpeg.zeranoe.com/builds/",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "ffmpeg",
+    "binary",
+    "win32",
+    "x64"
+  ],
+  "os": [
+    "win32"
+  ],
+  "cpu": [
+    "x64"
+  ],
+  "author": "Kristoffer Lundén <kristoffer.lunden@gmail.com>",
+  "license": "LGPL 2.1"
+}

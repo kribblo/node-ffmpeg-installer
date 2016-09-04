@@ -1,0 +1,23 @@
+{
+  "name": "@ffmpeg-installer/linux-x64",
+  "version": "3.1.3",
+  "description": "Linux FFmpeg binary used by ffmpeg-installer",
+  "homepage": "https://www.johnvansickle.com/ffmpeg/",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "ffmpeg",
+    "binary",
+    "linux",
+    "x64"
+  ],
+  "os": [
+    "linux"
+  ],
+  "cpu": [
+    "x64"
+  ],
+  "author": "Kristoffer Lundén <kristoffer.lunden@gmail.com>",
+  "license": "LGPL 2.1"
+}
