@@ -3,9 +3,9 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "pretest": "jshint *.js",
     "test": "tape test/*.js",
-    "posttest": "bash test/test-file-types.sh"
+    "posttest": "jshint *.js",
+    "preversion": "npm test"
   },
   "keywords": [
     "ffmpeg",
