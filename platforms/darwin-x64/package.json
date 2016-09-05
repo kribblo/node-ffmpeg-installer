@@ -4,7 +4,8 @@
   "description": "Mac OS X FFmpeg binary used by ffmpeg-installer",
   "homepage": "https://evermeet.cx/ffmpeg/",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "file ffmpeg | grep -qF \"Mach-O\"",
+    "prepublish": "npm test"
   },
   "keywords": [
     "ffmpeg",

@@ -4,7 +4,8 @@
   "description": "Windows FFmpeg binary used by ffmpeg-installer",
   "homepage": "https://ffmpeg.zeranoe.com/builds/",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "file ffmpeg.exe | grep -qF \"PE32+\"",
+    "prepublish": "npm test"
   },
   "keywords": [
     "ffmpeg",
