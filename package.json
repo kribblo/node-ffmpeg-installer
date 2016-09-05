@@ -25,5 +25,16 @@
     "jshint": "^2.9.3",
     "semver": "^5.3.0",
     "tape": "^4.6.0"
-  }
+  },
+  "directories": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kribblo/node-ffmpeg-installer.git"
+  },
+  "bugs": {
+    "url": "https://github.com/kribblo/node-ffmpeg-installer/issues"
+  },
+  "homepage": "https://github.com/kribblo/node-ffmpeg-installer#readme"
 }
