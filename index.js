@@ -16,7 +16,7 @@ if (!version) {
 
 const binary = platform === 'win32' ? 'ffmpeg.exe' : 'ffmpeg';
 
-const ffmpegPath = path.join(__dirname, 'node_modules', packageName, binary);
+const ffmpegPath = path.resolve(__dirname, '..', platform, binary);
 
 module.exports = {
     path: ffmpegPath,
