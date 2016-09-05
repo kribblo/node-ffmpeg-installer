@@ -43,3 +43,10 @@ Downloaded from the sources listed at [ffmpeg.org](https://ffmpeg.org/download.h
 * Windows (v3.0.1): https://ffmpeg.zeranoe.com/builds/
 
 For version updates, submit issue or pull request.
+
+## Upload new versions
+
+In every updated `platforms/*` directory:
+ 
+    npm run upload
+    

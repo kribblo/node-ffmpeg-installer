@@ -5,7 +5,8 @@
   "homepage": "https://evermeet.cx/ffmpeg/",
   "scripts": {
     "test": "file ffmpeg | grep -qF \"Mach-O\"",
-    "prepublish": "npm test"
+    "prepublish": "npm test",
+    "upload": "npm publish --access public"
   },
   "keywords": [
     "ffmpeg",

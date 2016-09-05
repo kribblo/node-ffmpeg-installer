@@ -5,7 +5,8 @@
   "homepage": "https://www.johnvansickle.com/ffmpeg/",
   "scripts": {
     "test": "file ffmpeg | grep -qF \"ELF 64-bit\"",
-    "prepublish": "npm test"
+    "prepublish": "npm test",
+    "upload": "npm publish --access public"
   },
   "keywords": [
     "ffmpeg",

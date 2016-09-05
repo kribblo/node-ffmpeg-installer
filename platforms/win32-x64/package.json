@@ -5,7 +5,8 @@
   "homepage": "https://ffmpeg.zeranoe.com/builds/",
   "scripts": {
     "test": "file ffmpeg.exe | grep -qF \"PE32+\"",
-    "prepublish": "npm test"
+    "prepublish": "npm test",
+    "upload": "npm publish --access public"
   },
   "keywords": [
     "ffmpeg",
