@@ -14,7 +14,7 @@ if (!version) {
     process.exit(1);
 }
 
-const binary = platform === 'win32' ? 'ffmpeg.exe' : 'ffmpeg';
+const binary = os.platform() === 'win32' ? 'ffmpeg.exe' : 'ffmpeg';
 
 const ffmpegPath = path.resolve(__dirname, '..', platform, binary);
 
