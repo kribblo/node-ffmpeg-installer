@@ -4,7 +4,7 @@ Platform independent binary installer of [FFmpeg](https://ffmpeg.org/) for node 
 
 Installs a binary of `ffmpeg` for the current platform and provides a path and version. Supports Linux, Windows and Mac OS/X.
 
-A combination of package.json fields `optionalDependencies`, `cpu`, and `os` let's the installer only download the binary for the current platform.
+A combination of package.json fields `optionalDependencies`, `cpu`, and `os` let's the installer only download the binary for the current platform. See also "Warnings during install", below.
 
 ## Install
 
@@ -33,6 +33,10 @@ const ffmpegPath = require('@ffmpeg-installer/ffmpeg').path;
 const ffmpeg = require('fluent-ffmpeg');
 ffmpeg.setFfmpegPath(ffmpegPath);
 ```
+
+## Warnings during install
+
+To automatically choose the binary to install, [optionalDependencies](https://docs.npmjs.com/files/package.json#optionaldependencies) are used. This currently outputs warnings in the console, an issue that is [tracked by the npm team here](https://github.com/npm/npm/issues/9567).
 
 ## The binaries
 
