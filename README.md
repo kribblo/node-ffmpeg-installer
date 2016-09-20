@@ -54,3 +54,6 @@ In every updated `platforms/*` directory:
  
     npm run upload
     
+## See also
+
+* [node-ffprobe-installer](https://www.npmjs.com/package/@ffprobe-installer/ffprobe) - fork of this project that does the same thing for FFprobe
