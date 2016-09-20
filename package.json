@@ -3,6 +3,8 @@
   "version": "1.0.3",
   "main": "index.js",
   "scripts": {
+    "preinstall": "scripts/pre-install.js",
+    "postinstall": "scripts/post-install.js",
     "lint": "jshint *.js",
     "preversion": "npm run lint"
   },
