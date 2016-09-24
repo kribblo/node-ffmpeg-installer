@@ -23,9 +23,6 @@
   "devDependencies": {
     "jshint": "^2.9.3"
   },
-  "directories": {
-    "test": "test"
-  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/kribblo/node-ffmpeg-installer.git"

@@ -1,3 +1,5 @@
 platforms
 .idea
 *.iml
+.jshintrc
+*.tgz
