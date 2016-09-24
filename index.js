@@ -37,7 +37,7 @@ if (verifyFile(npm3Binary)) {
     throw 'Could not find ffmpeg executable, tried "' + npm3Binary + '" and "' + npm2Binary + '"';
 }
 
-var version = packageJson.version;
+var version = packageJson.ffmpeg || packageJson.version;
 var url = packageJson.homepage;
 
 module.exports = {
