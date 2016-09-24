@@ -2,7 +2,7 @@
   "name": "@ffmpeg-installer/win32-x64",
   "version": "3.0.1",
   "description": "Windows FFmpeg binary used by ffmpeg-installer",
-  "homepage": "https://ffmpeg.zeranoe.com/builds/",
+  "homepage": "https://ffmpeg.zeranoe.com/builds/win64/static/",
   "scripts": {
     "test": "file ffmpeg.exe | grep -qF \"PE32+\"",
     "prepublish": "npm test",
@@ -21,5 +21,5 @@
     "x64"
   ],
   "author": "Kristoffer Lundén <kristoffer.lunden@gmail.com>",
-  "license": "LGPL-2.1"
+  "license": "GPLv3"
 }

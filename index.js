@@ -38,8 +38,10 @@ if (verifyFile(npm3Binary)) {
 }
 
 var version = packageJson.version;
+var url = packageJson.homepage;
 
 module.exports = {
     path: ffmpegPath,
-    version: version
+    version: version,
+    url: url
 };
