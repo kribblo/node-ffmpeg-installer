@@ -22,7 +22,7 @@ console.log(ffmpeg.path, ffmpeg.version);
 ```javascript
 const ffmpegPath = require('@ffmpeg-installer/ffmpeg').path;
 const spawn = require('child_process').spawn;
-const ffmpeg = spawn('ffmpeg', args);
+const ffmpeg = spawn(ffmpegPath, args);
 ffmpeg.on('exit', onExit);
 ```
 
