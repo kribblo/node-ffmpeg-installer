@@ -9,28 +9,39 @@ var verifyFile = require('./lib/verify-file');
 var platform = os.platform() + '-' + os.arch();
 
 var packageName = '@ffmpeg-installer/' + platform;
-var version = require('./package.json').optionalDependencies[packageName];
 
-if (!version) {
-    console.error('Unsupported platform/architecture:', platform);
-    process.exit(1);
+if (!require('./package.json').optionalDependencies[packageName]) {
+    throw 'Unsupported platform/architecture: ' + platform;
 }
 
 var binary = os.platform() === 'win32' ? 'ffmpeg.exe' : 'ffmpeg';
 
-var npm3Path = path.resolve(__dirname, '..', platform, binary);
-var npm2Path = path.resolve(__dirname, 'node_modules', '@ffmpeg-installer', platform, binary);
+var npm3Path = path.resolve(__dirname, '..', platform);
+var npm2Path = path.resolve(__dirname, 'node_modules', '@ffmpeg-installer', platform);
 
-var ffmpegPath;
-if (verifyFile(npm3Path)) {
-    ffmpegPath = npm3Path;
-} else if (verifyFile(npm2Path)) {
-    ffmpegPath = npm2Path;
+var npm3Binary = path.join(npm3Path, binary);
+var npm2Binary = path.join(npm2Path, binary);
+
+var npm3Package = path.join(npm3Path, 'package.json');
+var npm2Package = path.join(npm2Path, 'package.json');
+
+var ffmpegPath, packageJson;
+
+if (verifyFile(npm3Binary)) {
+    ffmpegPath = npm3Binary;
+    packageJson = require(npm3Package);
+} else if (verifyFile(npm2Binary)) {
+    ffmpegPath = npm2Binary;
+    packageJson = require(npm2Package);
 } else {
-    throw 'Could not find ffmpeg executable, tried "' + npm3Path + '" and "' + npm2Path + '"';
+    throw 'Could not find ffmpeg executable, tried "' + npm3Binary + '" and "' + npm2Binary + '"';
 }
+
+var version = packageJson.ffmpeg || packageJson.version;
+var url = packageJson.homepage;
 
 module.exports = {
     path: ffmpegPath,
-    version: version
+    version: version,
+    url: url
 };
