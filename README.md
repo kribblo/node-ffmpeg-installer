@@ -26,7 +26,7 @@ const ffmpeg = spawn(ffmpegPath, args);
 ffmpeg.on('exit', onExit);
 ```
 
-### fluent-ffmpeg
+### [fluent-ffmpeg](https://github.com/fluent-ffmpeg/node-fluent-ffmpeg)
 
 ```javascript
 const ffmpegPath = require('@ffmpeg-installer/ffmpeg').path;
