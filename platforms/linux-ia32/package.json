@@ -1,11 +1,12 @@
 {
   "name": "@ffmpeg-installer/linux-ia32",
-  "version": "4.0.0",
+  "version": "4.0.1",
   "description": "Linux FFmpeg binary used by ffmpeg-installer",
   "homepage": "https://www.johnvansickle.com/ffmpeg/",
   "scripts": {
     "test": "file ffmpeg | grep -qF \"ELF 32-bit\"",
     "prepublish": "npm test",
+    "postinstall": "chmod u+x ffmpeg",
     "upload": "npm publish --access public"
   },
   "keywords": [
