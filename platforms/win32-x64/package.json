@@ -1,6 +1,6 @@
 {
   "name": "@ffmpeg-installer/win32-x64",
-  "version": "4.0.0",
+  "version": "4.0.1",
   "description": "Windows FFmpeg binary used by ffmpeg-installer",
   "homepage": "https://ffmpeg.zeranoe.com/builds/win64/static/",
   "scripts": {
@@ -22,5 +22,5 @@
   ],
   "author": "Kristoffer Lundén <kristoffer.lunden@gmail.com>",
   "license": "GPLv3",
-  "ffmpeg": "20160924-1212e34"
+  "ffmpeg": "20170422-207e6de"
 }
