@@ -7,7 +7,7 @@
     "test": "file ffmpeg | grep -qF \"Mach-O\"",
     "prepublish": "npm test",
     "postinstall": "chmod u+x ffmpeg",
-    "upload": "npm publish --access public"
+    "upload": "npm --userconfig=../../.npmrc publish --access public"
   },
   "keywords": [
     "ffmpeg",

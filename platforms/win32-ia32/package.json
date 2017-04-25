@@ -6,7 +6,7 @@
   "scripts": {
     "test": "file ffmpeg.exe | grep -qF \"PE32\"",
     "prepublish": "npm test",
-    "upload": "npm publish --access public"
+    "upload": "npm --userconfig=../../.npmrc publish --access public"
   },
   "keywords": [
     "ffmpeg",
