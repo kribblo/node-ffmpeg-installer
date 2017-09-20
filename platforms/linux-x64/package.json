@@ -1,11 +1,11 @@
 {
   "name": "@ffmpeg-installer/linux-x64",
-  "version": "4.0.2",
+  "version": "4.0.3",
   "description": "Linux FFmpeg binary used by ffmpeg-installer",
   "homepage": "https://www.johnvansickle.com/ffmpeg/",
   "scripts": {
     "test": "file ffmpeg | grep -qF \"ELF 64-bit\"",
-    "prepublish": "npm test",
+    "prepublishOnly": "npm test",
     "postinstall": "chmod u+x ffmpeg",
     "upload": "npm --userconfig=../../.npmrc publish --access public"
   },

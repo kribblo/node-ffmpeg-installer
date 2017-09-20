@@ -1,11 +1,11 @@
 {
   "name": "@ffmpeg-installer/darwin-x64",
-  "version": "4.0.3",
+  "version": "4.0.4",
   "description": "Mac OS X FFmpeg binary used by ffmpeg-installer",
   "homepage": "https://evermeet.cx/ffmpeg/",
   "scripts": {
     "test": "file ffmpeg | grep -qF \"Mach-O\"",
-    "prepublish": "npm test",
+    "prepublishOnly": "npm test",
     "postinstall": "chmod u+x ffmpeg",
     "upload": "npm --userconfig=../../.npmrc publish --access public"
   },

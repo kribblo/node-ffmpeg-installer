@@ -1,11 +1,11 @@
 {
   "name": "@ffmpeg-installer/win32-ia32",
-  "version": "4.0.2",
+  "version": "4.0.3",
   "description": "Windows FFmpeg binary used by ffmpeg-installer",
   "homepage": "https://ffmpeg.zeranoe.com/builds/win32/static/",
   "scripts": {
     "test": "file ffmpeg.exe | grep -qF \"PE32\"",
-    "prepublish": "npm test",
+    "prepublishOnly": "npm test",
     "upload": "npm --userconfig=../../.npmrc publish --access public"
   },
   "keywords": [
