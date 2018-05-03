@@ -1,6 +1,6 @@
 {
   "name": "@ffmpeg-installer/darwin-x64",
-  "version": "4.0.4",
+  "version": "4.0.5",
   "description": "Mac OS X FFmpeg binary used by ffmpeg-installer",
   "homepage": "https://evermeet.cx/ffmpeg/",
   "scripts": {
@@ -23,5 +23,5 @@
   ],
   "author": "Kristoffer Lundén <kristoffer.lunden@gmail.com>",
   "license": "LGPL-2.1",
-  "ffmpeg": "85641-gdd49eff"
+  "ffmpeg": "90908-g0807a77160"
 }

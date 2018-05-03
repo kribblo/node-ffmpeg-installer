@@ -1,6 +1,6 @@
 {
   "name": "@ffmpeg-installer/linux-x64",
-  "version": "4.0.3",
+  "version": "4.0.4",
   "description": "Linux FFmpeg binary used by ffmpeg-installer",
   "homepage": "https://www.johnvansickle.com/ffmpeg/",
   "scripts": {
@@ -23,5 +23,5 @@
   ],
   "author": "Kristoffer Lundén <kristoffer.lunden@gmail.com>",
   "license": "GPLv3",
-  "ffmpeg": "20170417-ge22d495538"
+  "ffmpeg": "20180429-g19c3df0cd"
 }
