@@ -52,11 +52,11 @@ const ffmpegPath = require('@ffmpeg-installer/ffmpeg').path.replace('app.asar', 
 
 Downloaded from the sources listed at [ffmpeg.org](https://ffmpeg.org/download.html):
 
-* Linux 32-bit: (20170919-g18821e3ba1): https://www.johnvansickle.com/ffmpeg/
-* Linux 64-bit: (20170919-g18821e3ba1): https://www.johnvansickle.com/ffmpeg/
-* Mac OS/X (87313-g73bf0f4): https://evermeet.cx/ffmpeg/
-* Windows 32-bit (20170915-eea64ef): https://ffmpeg.zeranoe.com/builds/win32/static/
-* Windows 64-bit (20170918-18821e3): https://ffmpeg.zeranoe.com/builds/win64/static/
+* Linux 32-bit: (20180429-g19c3df0cd): https://www.johnvansickle.com/ffmpeg/
+* Linux 64-bit: (20180429-g19c3df0cd): https://www.johnvansickle.com/ffmpeg/
+* Mac OS/X (90908-g0807a77160): https://evermeet.cx/ffmpeg/
+* Windows 32-bit (20180102-41e51fb): https://ffmpeg.zeranoe.com/builds/win32/static/
+* Windows 64-bit (20180102-41e51fb): https://ffmpeg.zeranoe.com/builds/win64/static/
 
 For version updates, submit issue or pull request.
 
