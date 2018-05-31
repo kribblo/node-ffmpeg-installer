@@ -54,7 +54,7 @@ Downloaded from the sources listed at [ffmpeg.org](https://ffmpeg.org/download.h
 
 * Linux 32-bit: (20180429-g19c3df0cd): https://www.johnvansickle.com/ffmpeg/
 * Linux 64-bit: (20180429-g19c3df0cd): https://www.johnvansickle.com/ffmpeg/
-* Mac OS/X (90908-g0807a77160): https://evermeet.cx/ffmpeg/
+* Mac OS/X (91158-g63c4a4b0d6): https://evermeet.cx/ffmpeg/
 * Windows 32-bit (20180102-41e51fb): https://ffmpeg.zeranoe.com/builds/win32/static/
 * Windows 64-bit (20180102-41e51fb): https://ffmpeg.zeranoe.com/builds/win64/static/
 
