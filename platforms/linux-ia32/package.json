@@ -1,6 +1,6 @@
 {
   "name": "@ffmpeg-installer/linux-ia32",
-  "version": "4.0.4",
+  "version": "4.0.5",
   "description": "Linux FFmpeg binary used by ffmpeg-installer",
   "homepage": "https://www.johnvansickle.com/ffmpeg/",
   "scripts": {
