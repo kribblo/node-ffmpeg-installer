@@ -4,11 +4,15 @@
   "main": "index.js",
   "scripts": {
     "lint": "jshint *.js",
-    "preversion": "npm run lint"
+    "preversion": "npm run lint",
+    "upload": "npm --userconfig=.npmrc publish --access public"
   },
   "keywords": [
     "ffmpeg",
-    "binary"
+    "binary",
+    "installer",
+    "audio",
+    "sound"
   ],
   "author": "Kristoffer Lundén <kristoffer.lunden@gmail.com>",
   "license": "LGPL-2.1",
