@@ -1,6 +1,6 @@
 {
   "name": "@ffmpeg-installer/linux-ia32",
-  "version": "4.0.5",
+  "version": "4.1.0",
   "description": "Linux FFmpeg binary used by ffmpeg-installer",
   "homepage": "https://www.johnvansickle.com/ffmpeg/",
   "scripts": {
@@ -23,5 +23,5 @@
   ],
   "author": "Kristoffer Lundén <kristoffer.lunden@gmail.com>",
   "license": "GPLv3",
-  "ffmpeg": "20180429-g19c3df0cd"
+  "ffmpeg": "20181210-g0e8eb07980"
 }
