@@ -20,7 +20,7 @@
     "linux"
   ],
   "cpu": [
-    "arm"
+    "arm64"
   ],
   "author": "Luis Antonio González <luisangonzazlez@gmail.com>",
   "license": "GPLv3",
