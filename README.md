@@ -40,6 +40,14 @@ ffmpeg.setFfmpegPath(ffmpegPath);
 
 To automatically choose the binary to install, [optionalDependencies](https://docs.npmjs.com/files/package.json#optionaldependencies) are used. This currently outputs warnings in the console, an issue that is [tracked by the npm team here](https://github.com/npm/npm/issues/9567).
 
+### AWS and/or Elastic Beanstalk
+
+If you get permissions issues, try adding a .npmrc file with the following:
+
+    unsafe-perm=true
+    
+See [issue #21](https://github.com/kribblo/node-ffmpeg-installer/issues/21)
+
 ### Wrong path under Electron with Asar enabled
 
 It's a [known issue](https://github.com/electron-userland/electron-packager/issues/740) that Asar breaks native paths. As a workaround, if you use Asar, you can do something like this:

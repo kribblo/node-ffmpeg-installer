@@ -1,0 +1,27 @@
+{
+  "name": "@ffmpeg-installer/linux-arm",
+  "version": "4.1.3",
+  "description": "Linux FFmpeg binary used by ffmpeg-installer",
+  "homepage": "https://www.johnvansickle.com/ffmpeg/",
+  "scripts": {
+    "test": "file ffmpeg | grep -qF \"ELF 32-bit\"",
+    "prepublishOnly": "npm test",
+    "postinstall": "chmod u+x ffmpeg",
+    "upload": "npm --userconfig=../../.npmrc publish --access public"
+  },
+  "keywords": [
+    "ffmpeg",
+    "binary",
+    "linux",
+    "armhf"
+  ],
+  "os": [
+    "linux"
+  ],
+  "cpu": [
+    "arm"
+  ],
+  "author": "Luis Antonio González <luisangonzazlez@gmail.com>",
+  "license": "GPLv3",
+  "ffmpeg": "20190605-gd81913e680"
+}
