@@ -1,6 +1,6 @@
 {
   "name": "@ffmpeg-installer/linux-arm64",
-  "version": "4.1.3",
+  "version": "4.1.4",
   "description": "Linux FFmpeg binary used by ffmpeg-installer",
   "homepage": "https://www.johnvansickle.com/ffmpeg/",
   "scripts": {
