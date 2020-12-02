@@ -56,9 +56,9 @@ It's a [known issue](https://github.com/electron-userland/electron-packager/issu
 const ffmpegPath = require('@ffmpeg-installer/ffmpeg').path.replace('app.asar', 'app.asar.unpacked');
 ```
 
-### Compiling ffmpeg for AWS Lambda/other platforms
+### Compiling ffmpeg for platforms other than your own
 
-If you need to install a version of `ffmpeg` that differs than your current platform (e.g. compiling a linux version to upload to AWS Lambda from MacOS), you can use `npm install @ffmpeg-installer/linux-x64 --force` (substituting `linux-x64` with whatever platform you need). Note that if you are compressing your project into a `.zip` for Lambda, you will need to exclude the other platforms' builds from your archive.
+If you need to install a version of `ffmpeg` that differs than your current platform (e.g. compiling a Linux version to upload to AWS Lambda from MacOS), you can use `npm install @ffmpeg-installer/linux-x64 --force` (substituting `linux-x64` with whatever platform you need). Note that if you are compressing your project into a `.zip` for Lambda, you will need to exclude the other platforms' builds from your archive.
 
 ## The binaries
 
