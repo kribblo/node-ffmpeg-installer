@@ -9,7 +9,7 @@ A combination of package.json fields `optionalDependencies`, `cpu`, and `os` let
 ## Install
 
     npm install --save @ffmpeg-installer/ffmpeg
-    
+
 ## Usage examples
 
 ```javascript
@@ -45,7 +45,7 @@ To automatically choose the binary to install, [optionalDependencies](https://do
 If you get permissions issues, try adding a .npmrc file with the following:
 
     unsafe-perm=true
-    
+
 See [issue #21](https://github.com/kribblo/node-ffmpeg-installer/issues/21)
 
 ### Wrong path under Electron with Asar enabled
@@ -55,6 +55,10 @@ It's a [known issue](https://github.com/electron-userland/electron-packager/issu
 ```javascript
 const ffmpegPath = require('@ffmpeg-installer/ffmpeg').path.replace('app.asar', 'app.asar.unpacked');
 ```
+
+### Compiling ffmpeg for platforms other than your own
+
+If you need to install a version of `ffmpeg` that differs than your current platform (e.g. compiling a Linux version to upload to AWS Lambda from MacOS), you can use `npm install @ffmpeg-installer/linux-x64 --force` (substituting `linux-x64` with whatever platform you need). Note that if you are compressing your project into a `.zip` for Lambda, you will need to exclude the other platforms' builds from your archive.
 
 ## The binaries
 
