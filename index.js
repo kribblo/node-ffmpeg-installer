@@ -1,7 +1,6 @@
 'use strict';
 
 var os = require('os');
-var fs = require('fs');
 var path = require('path');
 
 var verifyFile = require('./lib/verify-file');
@@ -46,6 +45,13 @@ if (verifyFile(npm3Binary)) {
 var version = packageJson.ffmpeg || packageJson.version;
 var url = packageJson.homepage;
 
+/**
+ * @type {{
+ *  path: string;
+ *  version: string;
+ *  url: string;
+ * }}
+ */
 module.exports = {
     path: ffmpegPath,
     version: version,
