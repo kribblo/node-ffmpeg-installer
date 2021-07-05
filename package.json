@@ -5,8 +5,12 @@
   "scripts": {
     "lint": "jshint *.js",
     "preversion": "npm run lint",
-    "upload": "npm --userconfig=.npmrc publish --access public"
+    "types": "tsc",
+    "preupload": "npm run types",
+    "upload": "npm --userconfig=.npmrc publish --access public",
+    "test": "tsd"
   },
+  "types": "types/index.d.ts",
   "keywords": [
     "ffmpeg",
     "binary",
@@ -28,6 +32,8 @@
   },
   "devDependencies": {
     "jshint": "2.12.0"
+    "tsd": "^0.14.0",
+    "typescript": "^4.2.3"
   },
   "repository": {
     "type": "git",
