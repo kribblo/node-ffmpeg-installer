@@ -3,3 +3,5 @@ platforms
 *.iml
 .jshintrc
 *.tgz
+*~
+.env
