@@ -5,3 +5,4 @@ node_modules
 .npmrc
 types/**/*.d.ts
 /**/.DS_Store
+.env
