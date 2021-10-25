@@ -9,6 +9,11 @@
     "postinstall": "chmod u+x ffmpeg",
     "upload": "npm --userconfig=../../.npmrc publish --access public"
   },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/kribblo/node-ffmpeg-installer.git",
+    "directory": "platforms/darwin-x64"
+  },
   "keywords": [
     "ffmpeg",
     "binary",
